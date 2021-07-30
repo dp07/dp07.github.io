@@ -20,7 +20,7 @@
   </head>
   <body>
       <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">Dany Pradana</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#organization">Organization</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,6 +48,9 @@
                   <li><a class="dropdown-item" href="#">Article</a></li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -55,8 +58,8 @@
       <!-- Akhir Navbar -->
 
       <!-- Jumbotron -->
-      <section class="jumbotron text-center">
-          <img src="img/dp.png" alt="Dany Pradana" width="200" class="border border-5 border-success rounded-circle">
+      <section class="jumbotron text-center" >
+          <img src="img/dp.png" alt="Dany Pradana" width="200" class="border border-5 border-success rounded-circle" style="margin-top: 100px;">
         <h2 class="fw-bold fs-4"><span class="text-success namehead">Dany</span> Pradana</h2>
         <h6 class="lead">Web Developer | Wordpress Developer | Designer | SEO Writer</h6>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L48,261.3C96,267,192,277,288,261.3C384,245,480,203,576,181.3C672,160,768,160,864,165.3C960,171,1056,181,1152,192C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -84,7 +87,7 @@
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
-              <p>
+              <p class="mt-3">
                 <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="" aria-controls="collapseExample2">
                  SMK Negeri 2 Kebumen
                 </a>
@@ -96,15 +99,83 @@
               </div>
             </div>
           </div>
-          <div class="row text-center mt-4">
-            <h1 class="">Project</h1>
-            <div class="col"></div>
-            <div class="col"></div>
+          <div class="row mt-5">
+            <div class="col">
+              <h4 class="">Skill</h4>
+              <p>PHP (Beginner)</p>
+              <div class="progress" style="margin-top: -15px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="mt-3">JavaScript (Beginner)</p>
+              <div class="progress" style="margin-top: -15px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="mt-3">HTML/CSS (Intermediet)</p>
+              <div class="progress" style="margin-top: -15px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="mt-3">Mysql (Beginner)</p>
+              <div class="progress" style="margin-top: -15px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="mt-3">CorelDraw (Intermediet)</p>
+              <div class="progress" style="margin-top: -15px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col">
+              <h4 class="">Personality</h4>
+              <p>Attention to Details</p>
+              <div class="progress" style="margin-top: -15px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="mt-3">Creativity</p>
+              <div class="progress" style="margin-top: -15px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="mt-3">Work Under Pressure</p>
+              <div class="progress" style="margin-top: -15px;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="mt-3">Imagination</p>
+              <div class="progress" style="margin-top: -15px;">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
       <!-- Akhir About Me -->
+
+      <!-- Organization -->
+      <section id="organization" style="margin-top: 100px;">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center text-success">Organization Experience</h1>
+            <p>
+              <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="">
+                Universitas Negeri Semarang
+              </a>
+            </p>
+            <div class="" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+            <p class="mt-3">
+              <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="" aria-controls="collapseExample2">
+               SMK Negeri 2 Kebumen
+              </a>
+            </p>
+            <div class="" id="collapseExample2">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Organization -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
